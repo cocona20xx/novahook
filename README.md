@@ -1,9 +1,7 @@
-# Fabric Example Mod
-
-## Setup
-
-For setup instructions please see the [fabric wiki page](https://fabricmc.net/wiki/tutorial:setup) that relates to the IDE that you are using.
-
+# NovaHook
+Helper Library for at-runtime replacement of entity textures of all LivingEntity-based entities and mobs.
+Adds: 
+ - Methods for overriding the textures of all LivingEntity child class objects at runtime, per entity object.
+ - Vanilla Eye Layer Feature functionality to all mobs, akin to Optifine's RET Emissive Lighting Layer functionality.
 ## License
-
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+GNU LGPL 3.0-only

@@ -6,5 +6,12 @@ pluginManagement {
         }
         mavenCentral()
         gradlePluginPortal()
+        //Quilt Mappings on Fabric
+        maven { url = "https://maven.oroarmor.com" }
+        //LoomQuiltFlower
+        maven {
+            name = 'Cotton'
+            url = 'https://server.bbkr.space/artifactory/libs-release/'
+        }
     }
 }
