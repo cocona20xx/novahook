@@ -1,6 +1,6 @@
-package cocona20xx.novahook.impl;
+package cocona20xx.novahook.api.mixinhelpers.request;
 
-import cocona20xx.novahook.api.RequestRateLimiter;
+import cocona20xx.novahook.api.mixinhelpers.request.RequestRateLimiter;
 import net.minecraft.client.MinecraftClient;
 import org.jetbrains.annotations.NotNull;
 

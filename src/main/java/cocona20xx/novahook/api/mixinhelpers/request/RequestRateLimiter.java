@@ -1,4 +1,4 @@
-package cocona20xx.novahook.api;
+package cocona20xx.novahook.api.mixinhelpers.request;
 
 import net.minecraft.client.MinecraftClient;
 

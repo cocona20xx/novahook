@@ -1,7 +1,7 @@
-package cocona20xx.novahook.api;
+package cocona20xx.novahook.api.mixinhelpers.accessor;
 
-import cocona20xx.novahook.api.requester.OverrideRequestToken;
-import cocona20xx.novahook.api.requester.OverrideTextureRequester;
+import cocona20xx.novahook.api.OverrideToken;
+import cocona20xx.novahook.api.mixinhelpers.request.OverrideTextureRequester;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.util.Identifier;
 
@@ -18,7 +18,7 @@ public interface StandardOverrideAccessor {
     Optional<Identifier> getEyeOverride();
 
     @SuppressWarnings("rawtypes")
-    void setRequestInfo(OverrideRequestToken token, LivingEntity selfRef);
+    void setRequestInfo(OverrideToken token, LivingEntity selfRef);
 
     void setRequester(OverrideTextureRequester requester);
     void doBaseRequest() throws IllegalStateException;

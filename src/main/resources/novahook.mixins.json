@@ -6,8 +6,8 @@
   "mixins": [
   ],
   "client": [
-    "LivingStandardMixin",
-    "CowEntityRendererTESTINGMixin"
+    "LivingEntityRendererMixin",
+    "FeatureRendererMixin"
   ],
   "injectors": {
     "defaultRequire": 1
