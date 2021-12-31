@@ -60,19 +60,14 @@ jar {
 
 // configure the maven publication
 publishing {
-	publications {
-		mavenJava(MavenPublication) {
-			from components.java
-		}
-	}
-
-	// See https://docs.gradle.org/current/userguide/publishing_maven.html for information on how to set up publishing.
 	repositories {
-		name = "GitHubPackages"
-		url = "https://maven.pkg.github.com/cocona20xx/novahook"
-		credentials {
-        		username = System.getenv("GITHUB_ACTOR")
-        		password = System.getenv("GITHUB_TOKEN")
-     		 }
+		maven {
+				name = "GitHubPackages"
+				url = "https://maven.pkg.github.com/cocona20xx/novahook"
+				credentials {
+					username = System.getenv("GITHUB_ACTOR")
+					password = System.getenv("GITHUB_TOKEN")
+				}
+		}
 	}
 }
