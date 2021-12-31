@@ -1,12 +1,14 @@
 {
   "schemaVersion": 1,
   "id": "novahook",
-  "version": "0.1.0",
+  "version": "1.0.0",
 
   "name": "NovaHook",
-  "description": "Semi-personal Helper Library for various entity-related rendering stuffs.",
+  "description": "Helper library for Entity Texture Overrides & Entity Emissive Layers.",
   "authors": [
-    "cocona20xx"
+    "cocona20xx (mod author)",
+    "Mod logo contains two flaticon assets: Hook icon from https://www.flaticon.com/authors/bqlqn & supernova asset from https://www.flaticon.com/authors/freepik",
+    "Logo Font is a variant of JetBrains Mono (license: https://www.jetbrains.com/lp/mono/#license)"
   ],
   "license": "LGPL-3.0-only",
   "icon": "assets/novahook/textures/icon.png",
@@ -21,9 +23,9 @@
     "novahook.mixins.json"
   ],
   "depends": {
-    "fabricloader": ">=0.12.11",
-    "fabric": ">=0.44.0",
-    "minecraft": "1.17.x",
+    "fabricloader": ">=0.12.12",
+    "fabric": ">=0.45.0",
+    "minecraft": "1.17.1",
     "java": ">=16"
   }
 }

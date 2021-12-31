@@ -7,7 +7,23 @@
   ],
   "client": [
     "LivingEntityRendererMixin",
-    "FeatureRendererMixin"
+    "FeatureRendererMixin",
+    "LivingEntityMixin",
+    "EyeFeatureMixin",
+    "CatCollarMixin",
+    "EnergySwirlMixin",
+    "EndermanEyesMixin",
+    "PhantomEyesMixin",
+    "SpiderEyesMixin",
+    "DrownedOverlayMixin",
+    "HorseMarkingsMixin",
+    "IronGolemCracksMixin",
+    "LlamaDecorMixin",
+    "SaddleMixin",
+    "SheepWoolMixin",
+    "ShulkerHeadMixin",
+    "StrayOverlayMixin",
+    "WolfCollarMixin"
   ],
   "injectors": {
     "defaultRequire": 1
