@@ -33,14 +33,20 @@ public final class OverrideSupplierRegistry {
     }
 
     /**
+     * @return Returns the amount of suppliers loaded.
+     */
+    public static int supplierCount(){
+        return SUPPLIERS.size();
+    }
+
+    /**
      * Searches for an override corresponding to an {@link OverrideToken} over all registered suppliers. If multiple Identifiers are found, one will be randomly selected to return.
      * @param token The OverrideToken being used to find an override Identifier.
      * @param targetEntity The entity for which an override is being found.
      * @return Returns an Optional-wrapped {@link Identifier}, or {@code Optional.empty()} if no override is found.
-     * @throws IllegalStateException Thrown when no suppliers are present. Check this first with {@link OverrideSupplierRegistry#hasSuppliers()}
      */
-    public static Optional<Identifier> searchForOverride(OverrideToken token, Entity targetEntity) throws IllegalStateException{
-        if(!hasSuppliers()) throw new IllegalStateException("NovaHook API - OverrideSupplierRegistry: No override suppliers are registered.");
+    public static Optional<Identifier> searchForOverride(OverrideToken token, Entity targetEntity){
+        if(!hasSuppliers()) return Optional.empty();
         else {
             ArrayList<Identifier> potentialReturns = new ArrayList<>();
             for(OverrideSupplier s : SUPPLIERS.values()){
